@@ -1,3 +1,5 @@
+**FINAL REPORT - F. Ulises Barroso**
+
 The two data sources used were importing a flat file and web scraping:
 
 a)For the flat file I downloaded a CSV file from ourworldindata.org with the number of international arrivals to 264 countries around the world. There is data from 1995-2016 but some years are missing for some countries.
