@@ -1,10 +1,12 @@
-**FINAL REPORT - F. Ulises Barroso**
+#FINAL REPORT - F. Ulises Barroso
 
+##1
 The two data sources used were importing a flat file and web scraping:
 
 a)For the flat file I downloaded a CSV file from ourworldindata.org with the number of international arrivals to 264 countries around the world. There is data from 1995-2016 but some years are missing for some countries.
 b)I tried using the world bank API but was not successful. I ended finding the data I needed in a Wikipedia page with a table. I used web scraping to grab the data I needed off the HTML table into a pandas data frame.
 
+##2 & 3
 Extract and Transform:
 
 Source #1:
@@ -24,9 +26,12 @@ Load:
     
 I imported sqlalchemy to access MySQL. I created a connection engine using data for my localhost using my password and existing database name. I then Used the to_sql method in pandas to create a new table on the existing database. I verified the data was written into MySQL workbench. I finally used the read_sql method to read the database back into pandas to verify it is there.
 
+##4
 The data on both sources were similar in that they were both rows of countries. I knew ahead of time what the final columns would be. Because I don't expect to need drastic changes I chose to use a SQL database.
 
+##5
 I ended up with one database with one table. The table has 164 rows of countries each with population, international arrivals and the factor of arrivals and population in the year 2015.
 
+##6
 This database could be used to look for countries with a lot of arrivals compared to the population. The raw number of arrivals would naturally be bigger for bigger countries like the US or China. This way someone could see countries that are popular destinations for international travelers even if the country is small. I think a database like this can be used for identifying new emerging travel destinations. The data can be extended to a multi-year dataset. This dataset could then be used to look at past trends and forecasting the future influx of international arrivals.
 
